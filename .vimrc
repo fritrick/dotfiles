@@ -1,5 +1,3 @@
-" Notice: install https://github.com/VundleVim/Vundle.vim before
-" Notice: install https://github.com/tomasr/molokai before
 
 " basic settings
 
@@ -49,6 +47,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'preservim/nerdtree'
 Plugin 'mileszs/ack.vim'
+Plugin 'airblade/vim-gitgutter'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,6 +65,8 @@ let g:go_def_mode = 'godef'
 let g:godef_split=2
 let g:godef_same_file_in_same_window=1
 
+autocmd BufWritePost * GitGutter
+let g:gitgutter_highlight_lines = 1
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
