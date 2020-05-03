@@ -7,3 +7,4 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
+alias clean_git_branch='git checkout master && git pull && git branch -D $1'
