@@ -1,3 +1,5 @@
+" Notice: install https://github.com/VundleVim/Vundle.vim before
+" Notice: install https://github.com/tomasr/molokai before
 
 " basic settings
 
